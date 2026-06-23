@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-[#0F0F17]/95 backdrop-blur-md border-b border-purple-900/30">
-      <div className="max-w-7xl mx-auto px-6">
+      <div suppressHydrationWarning={true} className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">

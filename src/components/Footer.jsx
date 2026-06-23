@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer className="bg-[#0F0F17] border-t border-purple-900/30">
-      <div className="max-w-7xl mx-auto px-6 py-14">
+      <div suppressHydrationWarning={true} className="max-w-7xl mx-auto px-6 py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           
           {/* Brand Section */}
@@ -103,8 +105,8 @@ const Footer = () => {
 
         {/* Bottom Footer */}
         <div className="mt-12 pt-6 border-t border-purple-900/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} FLUXRIDE. All rights reserved.
+          <p suppressHydrationWarning={true} className="text-gray-500 text-sm">
+            © {CURRENT_YEAR} FLUXRIDE. All rights reserved.
           </p>
 
           <div className="flex gap-6">
